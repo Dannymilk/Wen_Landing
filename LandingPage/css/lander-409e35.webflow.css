@@ -87,6 +87,7 @@ a {
   z-index: 1;
   width: 100%;
   max-width: 1180px;
+  border-radius: 8px;
 }
 
 .row {
@@ -479,6 +480,7 @@ a {
 
 .section.main {
   background-color: #4263eb;
+  border-radius: 10px;
   color: #fff;
 }
 
