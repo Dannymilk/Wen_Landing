@@ -474,14 +474,14 @@ a {
   align-items: center;
 }
 
-.section.overflow-hidden {
+.section.overflow-hidden {s
   overflow: hidden;
 }
 
 .section.main {
   background-color: #4263eb;
-  border-radius: 10px;
   color: #fff;
+  border-radius: 12px;
 }
 
 .bg-white {
