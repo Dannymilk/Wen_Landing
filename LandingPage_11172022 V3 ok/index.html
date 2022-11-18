@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <!-- <link href="css/lander-409e35.webflow.css" rel="stylesheet" type="text/css" /> -->
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Comfortaa"
+      rel="stylesheet"
+    />
+
+    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
+
+    <style>
+      @media screen and (max-width: 1200px) {
+        body {
+          min-width: unset;
+        }
+
+        #S1 {
+          min-width: unset;
+          width: 90%;
+        }
+
+        #S2 {
+          min-width: unset;
+          width: 90%;
+        }
+        #S3 {
+          min-width: unset;
+          width: 90%;
+          /* margin :auto; */
+        }
+        .S3_pic {
+          width: 32%;
+        }
+        #S4-1,
+        #S4-2 {
+          min-width: unset;
+          /* width: 90%; */
+          gap: 10px;
+        }
+      
+
+        #S5 {
+          min-width: unset;
+          /* width: 90%; */
+          /* height: 40%; */
+        }
+        #Section5_pic {
+          display: none;
+        }
+
+        #S5_left,
+        #S5_button {
+          margin-left: auto;
+          margin-right: auto;
+        }
+
+        #S5_button {
+          margin-bottom: 5%;
+        }
+
+        #S5_right {
+          display: none;
+        }
+
+        #S6 {
+          width: 100%;
+        }
+        #S5_top_text{
+          padding-top: 1.5em;
+        }
+
+        #S_bottom {
+          min-width: unset;
+          display: flex;
+          width: 90%;
+        }
+        #S_bottom_text {
+          padding-left: 5%;
+
+          height : auto;
+          width: 70%;
+        }
+
+        #S_bottom_icon{
+          width: 30%;
+          padding-right: 5%;
+          min-width: 30%;
+        }
+
+
+      }
+      @media screen and (max-width: 980px) {
+        /* -15% for each */
+        h11 {
+          font-size: 46px;
+        }
+        h22 {
+          font-size: 25px;
+        }
+        h33 {
+          font-size: 27px;
+        }
+        h44 {
+          font-size: 20px;
+        }
+        /* h55{
+                font-size: 22px;
+              }
+              h66{
+                font-size: 14px;
+              }
+              h77{
+                font-size: 14px;
+              } */
+      }
+
+      @media screen and (max-width: 860px) {
+        .S1-text {
+          height: unset;
+          gap: 16px;
+        }
+
+        .S1-text1,
+        .S1-text2,
+        #S1_button,
+        h4 {
+          font-size: unset;
+        }
+
+
+
+        .center_pic {
+          max-height: 30px;
+          /* background-color: #45c74e; */
+        }
+
+        .S4_pic_left {
+          width: 15%;
+          height: 220px;
+          min-width: unset;
+          height: 220px;
+          width: 90%;
+          /* background-color : green; */
+          margin-top: unset;
+        }
+        .S4_inline {
+          gap: 10px;
+        }
+        .S4_full_rectangle {
+          box-sizing: border-box;
+          border-radius: 30px;
+
+          width: 600px;
+          max-width: 49%;
+          /* height: 320px; */
+          max-height: 45%;
+          padding-bottom: 5%;
+          gap: 10px;
+
+          border: 1px solid #e9eaf3;
+          box-shadow: 0px 2px 12px rgba(11, 22, 44, 0.05);
+          margin-left: auto;
+          margin-right: auto;
+
+          flex-direction: column;
+
+          /* background-color: pink; */
+        }
+        .S4_right_box_height {
+          max-height: 100px;
+          height: 50%;
+          /* background-color :pink; */
+        }
+
+        .S4_pic_right {
+          background-color: white;
+          border: unset;
+          box-shadow: unset;
+          max-width: unset;
+          width: 100%;
+          /* background-color: aquamarine; */
+          height: 50%;
+        }
+        .S4_right_text {
+          margin-top: 45%;
+          font-size: 15px;
+
+          /* background-color: pink; */
+          padding:5% 10px;
+        }
+
+        #S5_left {
+          width: 80%;
+          /* white-space: nowrap; */
+          /* backgr
+                  ound-color: aquamarine; */
+        }
+
+        #S5_button {
+          padding: 10px 8px;
+          gap: 8px;
+        }
+      }
+      @media screen and (max-width: 750px) {
+        h22 {
+          font-size: 20px;
+        }
+      }
+      @media screen and (max-width: 660px) {
+        .S1-text {
+          gap: unset;
+        }
+
+        #S5_button {
+          padding: 4px 4px;
+        }
+
+        .lineheight_auto {
+          /* line-height: unset;
+                  height : unset; */
+
+          line-height: 0px;
+          height: 40%;
+        }
+
+
+        #S_bottom {
+          min-width: unset;
+          display: flex;
+          width: 95%;
+        }
+
+
+
+      }
+
+      /* @media screen and (max-width: 620px) {
+        h22 {
+          font-size: 16px;
+        }
+      } */
+      @media screen and (max-width: 580px) {
+
+        #header_icon1,
+        #header_icon2 {
+          display: none;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        h1,
+        h2,
+        h3,
+        h4,
+        h11,
+        h22,
+        h33,
+        h44 {
+          font-size: unset;
+          font-weight: unset;
+        }
+        
+
+        #header_icon1,
+        #header_icon2 {
+          display: none;
+        }
+
+        .S1-text {
+          margin-top: -52%;
+        }
+
+        #header_icon3 {
+          margin-left: 30%;
+        }
+
+        #header_right_icon {
+          font-size: 10px;
+        }
+
+        .button.xl {
+          padding: 16px 0px;
+          border-radius: 46px;
+          font-size: 15px;
+        }
+
+        .S4_full_rectangle {
+          box-sizing: border-box;
+          border-radius: 30px;
+          /* max-width: 40%; */
+          max-height: 35%;
+        }
+
+        .S4_right_text,
+        .S4_left_text {
+          line-height: 1.5em;
+        }
+
+        #S5 {
+          min-width: unset;
+          /* width: 90%; */
+          /* height: 50%; */
+        }
+      }
+
+      @media screen and (max-width: 391px) {
+        h1,
+        h2,
+        h3,
+        h4,
+        h11,
+        h22,
+        h33,
+        h44 {
+          font-size: unset;
+          font-weight: unset;
+          line-height: 2em;
+        }
+
+
+        .MoonIcon{
+          max-width: 60px;
+        }
+
+        #header_left_text{
+          font-size :28px; 
+        }
+
+        #S1 {
+          min-width: unset;
+          width: 85%;
+          height: 140%;
+          /* background-color: aqua; */
+          overflow: hidden;
+          border-radius: 0px;
+        }
+
+        #S1_button {
+          padding: 10px 4px;
+          width : 40%;
+        }
+
+
+        .S1-text {
+          margin-top: -46%;
+        }
+
+        .button.xl {
+          padding: 16px 0px;
+          border-radius: 46px;
+          font-size: 15px;
+        }
+
+        .S4_pic_left {
+          /* margin-top: 5.5%; */
+          height : 30%;
+        }
+
+        .S4_right_text {
+          margin-top: 45%;
+          font-size: 10px;
+          margin-top: 10%;
+          line-height: 1.5em;
+          /* background-color: pink; */
+        
+          margin-bottom: 10%;
+  
+        }
+
+        .S4_left_text {
+          line-height: 1em;
+        
+        }
+
+        .S4_pic_right {
+          height : 30%;
+          /* background-color: pink; */
+        }
+
+        .S4_full_rectangle {
+          box-sizing: border-box;
+          border-radius: 30px;
+          /* max-width: 45%; */
+          /* max-height: 30%; */
+          /* height:40%; */
+          max-height: 13rem;
+
+        }
+
+        #S5 {
+          min-width: unset;
+          /* width: 90%; */
+          height: 70%;
+        }
+
+        #S5_left {
+          margin-top: 0%;
+        }
+
+
+
+        #S_bottom {
+          min-width: unset;
+          display: flex;
+          width: 100%;
+          gap:5%;
+        }
+        #S_bottom_text {
+          padding-left: 0%;
+        }
+
+        #S_bottom_icon{
+
+          padding-right: 0%;
+        }
+
+
+      }
+
+      @media screen and (max-width: 320px) {
+      
+        .MoonIcon{
+          max-width: 55px;
+        }
+
+        #header_left_text{
+          font-size :25px; 
+        }
+
+
+        
+        .S1-text{
+          padding-top : 5%;
+        }
+
+        #S1,#S2{
+          width: 95%;
+        }
+
+
+        .S4_full_rectangle {
+          max-width: 50%;
+          /* max-height: 45%; */
+        }
+
+        #S5 {
+          min-width: unset;
+          height: 80%;
+        }
+
+
+      }
+
+      @media screen and (max-width: 280px) {
+      
+      .S1-text{
+        margin-top: -51%;
+      }
+    }
+
+    </style>
+
+    <script src="https://unpkg.com/feather-icons"></script>
+  </head>
+
+  <body id="Body">
+    <header id="header" class="nav">
+      <a id="header_left_icon" href="index.html" aria-current="page">
+        <img src="images/png/NewLogo.png" class="MoonIcon" />
+        <h11 id="header_left_text">Wen</h11>
+      </a>
+
+      <div id="header_right_icon">
+        <a
+          id="header_icon1"
+          href="https://twitter.com/metawenio"
+          class="MasterSecondaryButton button main"
+          style="gap: 8px"
+        >
+          <img
+            src="images/svg/TwitterTopWhite.svg"
+            class="TwitterIconTop"
+            style="width: 16px"
+          />
+          <h66>Follow Us!</h66>
+        </a>
+        <a
+          id="header_icon2"
+          href="https://discord.com/invite/VtshCfBQ9S"
+          class="MasterSecondaryButton button main"
+          style="gap: 8px"
+          ;
+        >
+          <h66>Join Discord</h66>
+          <img
+            src="images/svg/DiscordTopWhite.svg"
+            alt="Discord_Top"
+            style="width: 16px"
+          />
+        </a>
+
+        <a
+          id="header_icon3"
+          href="https://docs.metawen.io/"
+          class="MasterSecondaryButton button main"
+          ><h66>How it Works</h66></a
+        >
+        <!-- <div
+                id="header_bar4"
+                onclick="Toggle2() "
+                class="button fa fa-bars"
+                style="font-size: 64px; gap: 8px"
+              ></div> -->
+      </div>
+    </header>
+
+    <section id="S0">
+      <div></div>
+    </section>
+
+    <section id="S1">
+      <div
+        id="S1-video"
+        data-poster-url=""
+        data-video-urls="./images/mp4/PhoneApe.mp4"
+        data-autoplay="true"
+        data-loop="true"
+        data-wf-ignore="true"
+        data-beta-bgvideo-upgrade="false"
+      >
+        <video
+          id=""
+          autoplay=""
+          loop=""
+          style="background-image: url('')"
+          muted=""
+          playsinline=""
+          data-wf-ignore="true"
+          data-object-fit="cover"
+        >
+          <source src="./images/mp4/PhoneApe.mp4" data-wf-ignore="true" />
+        </video>
+      </div>
+
+      <div class="S1-text" style="z-index: 0">
+        <h33 class="S1-text1">Next Gen NFT Finance Platform</h33>
+        <h11 class="S1-text2">Predict to earn with Wen.</h11>
+        <a id="S1_button" href="https://app.metawen.io/" class="S5 button xl main">
+          Launch app
+        </a>
+      </div>
+    </section>
+
+    <section class="S2 section">
+      <h22 class="S2_text">
+        What will Bored Ape Yacht Club Floor Price be in a week?
+      </h22>
+    </section>
+
+    <section id="S3" class="section">
+      <div>
+        <img
+          src="images/png/10232022png/R1.png"
+          class="S1T1Animation_ S3_pic"
+        />
+        <img
+          src="images/png/10232022png/R2.png"
+          class="S1T2Animation_ S3_pic"
+        />
+        <img
+          src="images/png/10232022png/R3.png"
+          class="S1T3Animation_ S3_pic"
+        />
+      </div>
+    </section>
+
+    <section id="S4-1">
+      <div class="S4_inline">
+        <div class="S4_full_rectangle S1L1Animation_ sectionAnimation_ section">
+          <div class="S4_pic_left column">
+            <img
+              class="center_pic"
+              src="images/svg/GraphAscend.svg"
+              alt="rising"
+            />
+            <br />
+            <h44 class="S4_left_text">predict to Earn</h44>
+          </div>
+
+          <div class="S4_pic_right ">
+            <h55 class="S4_right_text S4_right_box_height">
+              Earn by predicting top NFT collections floor price
+            </h55>
+          </div>
+        </div>
+        <div class="S4_full_rectangle S1L2Animation_ sectionAnimation_ section">
+          <div class="S4_pic_left column">
+            <img
+              class="center_pic"
+              src="images/svg/ShortIcon.svg"
+              alt="falling"
+            />
+            <br />
+            <h44 class="S4_left_text">Hedge Your Portfolio</h44>
+          </div>
+
+          <div class="S4_pic_right ">
+            <h55 class="S4_right_text S4_right_box_height">
+              Hedge your NFT investment in the bear market
+            </h55>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="S4-2">
+      <div class="S4_inline">
+        <div class="S4_full_rectangle S1L3Animation_ sectionAnimation_ section">
+          <div class="S4_pic_left column">
+            <img
+              class="center_pic"
+              src="images/svg/AnalyticsPie.svg"
+              alt="AnalyticsPie"
+            />
+            <br />
+            <h44 class="S4_left_text">Actionable Insights</h44>
+            <p></p>
+          </div>
+
+          <div class="S4_pic_right ">
+            <h55 class="S4_right_text S4_right_box_height" style="clear : right;">
+              Watch LIVE market sentiment for your favoraite collections
+            </h55>
+          </div>
+        </div>
+        <div class="S4_full_rectangle S1L4Animation_ sectionAnimation_ section">
+          <div class="S4_pic_left column">
+            <img class="center_pic" src="images/svg/Laptop.svg" alt="Laptop" />
+            <br />
+            <h44 class="S4_left_text">Blue-Chip Exposure</h44>
+            <p></p>
+          </div>
+
+          <div class="S4_pic_right ">
+            <h55 class="S4_right_text S4_right_box_height">
+              Gain exposure to top and expensive NFT collections with small capital
+            </h55>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div id="S5" class="section">
+        <div id="S5_left" class="lineheight_auto" >
+          <h33 id="S5_top_text">Start playing. Wen? Now!</h33>
+          <h66>
+            Join our beta test and receive free tokens to play. <br />
+            We&lsquo;d love to hear what you have to say.
+          </h66>
+          <a id="S5_button" href="https://app.metawen.io/" class="button">
+            <h44>Launch app</h44>
+          </a>
+
+
+        </div>
+
+        <div id="S5_right">
+          <img
+            id="Section5_pic"
+            src="images/png/NewMaskGroup/MaskGroupAll.png"
+            alt="BottomCryptoPic"
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer id="S6">
+      <!-- <div class="LineBottom2 section"></div> -->
+
+      <div id="S_bottom" class="RectangleBottom">
+        <h6 id="S_bottom_text" class="text-center ItemYCenter">
+          Copyright &copy; MetaWen | Powered by Users Like You
+        </h6>
+
+        <div id="S_bottom_icon">
+          <a href="https://twitter.com/metawenio">
+            <img src="images/svg/Twitter.svg" alt="Twitter_bottom_Icon"
+          /></a>
+          <a href="https://discord.com/invite/VtshCfBQ9S">
+            <img src="images/svg/Discord.svg" alt="Discord_botton_Icon" />
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+    <script>
+      feather.replace();
+    </script>
+
+    <script src="./js/SectionAnimation.js"></script>
+    <script src="./js/NightMode.js"></script>
+  </body>
+</html>
